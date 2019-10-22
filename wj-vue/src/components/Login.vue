@@ -5,11 +5,11 @@
       <h3 class="login_title">系统登录</h3>
       <el-form-item prop="account">
         <el-input type="text" v-model="loginForm.username"
-                  auto-complete="off" placeholder="客户号"></el-input>
+                  auto-complete="off" placeholder=""></el-input>
       </el-form-item>
       <el-form-item prop="checkPass">
         <el-input type="password" v-model="loginForm.password"
-                  auto-complete="off" placeholder="密码"></el-input>
+                  auto-complete="off" placeholder=""></el-input>
       </el-form-item>
       <el-checkbox class="login_remember" v-model="checked"
                    label-position="left"><span style="color: #505458">记住密码</span></el-checkbox>
@@ -30,8 +30,8 @@
         },**/
         checked: true,
         loginForm: {
-          username: '',
-          password: ''
+          username: 'a219391',
+          password: '123'
         },
         loading: false
       }
