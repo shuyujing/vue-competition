@@ -38,7 +38,8 @@
         form: {
           customerId: this.$store.state.user.username,
           productId: '',
-          transactionAmount: ''
+          transactionAmount: '',
+          businessCode:''
         },
         infoRoute:false
       }
@@ -53,7 +54,8 @@
           .post('/eureka-provider-control/transaction/buy', {
             customerId: _this.form.customerId,
             productId: _this.form.productId,
-            transactionAmount: _this.form.transactionAmount
+            transactionAmount: _this.form.transactionAmount,
+            businessCode:'022'
           })
           .then(resp => {
             if(resp.data.orderSeq>0){
